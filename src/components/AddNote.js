@@ -6,9 +6,9 @@ const AddNote = ({ Saving, Deleting }) => {
 
   const HandleChange  =  (event) => {
       ValueState(event.target.value);
-}
+  }
 
-const SaveNotes = () => {
+  const SaveNotes = () => {
 
       Saving(inputValue);
       ValueState('');

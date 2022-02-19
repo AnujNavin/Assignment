@@ -1,33 +1,32 @@
 
 
-
 import { MdDeleteForever } from 'react-icons/md'
 
-
-const notes = ({ pro , deleting , AddValue}) => {
+const notes = ({ pro , deleting }) => {
 
     const ID  = pro.id;
+
     const Delete = () => {
 
    
         deleting(ID);
       
      
-     };
+    };
      
- return( <div className="notes"> 
+    return( 
+    
+        <div className="notes"> 
      
-     {pro.text}
+        {pro.text}
 
-     <MdDeleteForever onClick = {Delete} />
+         <MdDeleteForever onClick = {Delete} />
 
       
 
- </div>
+         </div>
 
-
-
- );
+    );
 
 
 
